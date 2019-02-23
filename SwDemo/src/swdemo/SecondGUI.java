@@ -5,6 +5,7 @@
  */
 package swdemo;
 
+import java.awt.FlowLayout;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
@@ -24,8 +25,11 @@ class Abcs extends JFrame{
     // Create a constructor
     public Abcs(){
         
+        setLayout(new FlowLayout());
         JLabel jl = new JLabel("Hello World");
+        JLabel jl2 = new JLabel("Welcome Esther");
         add(jl);
+        add(jl2);
         
         // Always better to write your properties inside constructor
         setVisible(true);
